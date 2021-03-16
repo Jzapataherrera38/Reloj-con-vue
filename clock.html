@@ -12,11 +12,16 @@
 <body>
 
     <div>
-        <div id="clock">
-            <p class="date">{{ date }}</p>
-            <p class="time">{{ time }}</p>
-            <p class="text">DIGITAL CLOCK with Vue.js</p>
 
+        <boton v-for='country in paises' country="country">
+
+
+            <div id="clock">
+                <p class="date">{{ date }}</p>
+                <p class="time">{{ time }}</p>
+                <p class="text">DIGITAL CLOCK with Vue.js</p>
+
+        </boton>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 <script src="clock.js"></script>

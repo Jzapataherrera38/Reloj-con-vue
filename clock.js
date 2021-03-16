@@ -1,10 +1,14 @@
+Vue.component('boton', {
+    props: ['tiempo', 'datos', 'country'],
+})
 var clock = new Vue({
     el: '#clock',
     data: {
         time: '',
-        date: ''
+        date: '',
+        paises: [Colombia, Peru, Venezuela],
     }
-});
+})
 
 var timerID = setInterval(updateTime, 1000);
 updateTime();
